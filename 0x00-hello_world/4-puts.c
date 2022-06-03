@@ -1,9 +1,12 @@
 #include <stdio.h>
 
 /**
- * mychar - This is a short description.
+ * Description - This is one.
  *
- * Return - Main function will return 0.
+ *
+ *
+ * Main - This isvoid.
+ * Return - Function will return 0.
  */
 int main(void)
 {
