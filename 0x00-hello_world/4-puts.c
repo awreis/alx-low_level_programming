@@ -5,8 +5,7 @@
  *
  *
  *
- * Main - This isvoid.
- * Return - Function will return 0.
+ * return - Function will return 0.
  */
 int main(void)
 {
