@@ -2,8 +2,8 @@
 
 /**
 *My first puts programme
-*(Description number one)*
-*(Description number two)?
+*Mains is void
+*mychar prints = "\"Programming is like building a multilingual puzzle"
 */
 int main(void)
 {
