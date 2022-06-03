@@ -1,8 +1,10 @@
 #include <stdio.h>
 
 /**
-*My first puts programme
-*/
+ * mychar - This is a short description.
+ *
+ * Return - Main function will return 0.
+ */
 int main(void)
 {
 char mychar[] = "\"Programming is like building a multilingual puzzle";
