@@ -2,8 +2,6 @@
 
 /**
 *My first puts programme
-*Mains is void
-*mychar prints = "\"Programming is like building a multilingual puzzle"
 */
 int main(void)
 {
