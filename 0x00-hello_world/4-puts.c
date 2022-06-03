@@ -1,11 +1,9 @@
 #include <stdio.h>
 
 /**
- * Description - This is one.
+ * main - Entry point
  *
- *
- *
- * return - Function will return 0.
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
