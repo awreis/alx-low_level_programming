@@ -1,10 +1,9 @@
 #include <stdio.h>
 
 /**
- * This is a description.
+ * main - Entry point
  *
- * main is void.
- * return ia zero.
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
