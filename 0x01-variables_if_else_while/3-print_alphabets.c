@@ -11,12 +11,12 @@ int lowUP;
 for (lowUP = 'a'; lowUP <= 'z'; lowUP++)
 {
 putchar(lowUP);
-putchar('\n');
 }
+putchar('\n');
 for (lowUP = 'A'; lowUP <= 'Z'; lowUP++)
 {
 putchar(lowUP);
-getchar();
 }
+putchar('\n');
 return (0);
 }
