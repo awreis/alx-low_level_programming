@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include<conio.h>
+#include<string.h>
 
 /**
  * main - Entry point
@@ -7,11 +9,11 @@
  */
 int main(void)
 {
-int lowa;
-for (lowa = 'a'; lowa <= 'z'; lowa++)
+int alph;
+for (alph = 'a'; alph = 'z'; alph++)
 {
-putchar(lowa);
-putchar('\n');
+putchar(alph);
+getchar();
 }
 return (0);
 }
