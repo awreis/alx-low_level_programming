@@ -13,7 +13,7 @@ for (nx = '0'; nx <= '9'; nx++)
 {
 putchar(nx);
 }
-for (xn = 'a'; xn < 'f'; xn++)
+for (xn = 'a'; xn <= 'f'; xn++)
 {
 putchar(xn);
 }
