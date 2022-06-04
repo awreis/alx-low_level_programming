@@ -13,5 +13,5 @@ for (nv = 'z'; nv <= 'a'; nv++)
 putchar(nv);
 }
 putchar('\n');
-retunr (0);
+return (0);
 }
