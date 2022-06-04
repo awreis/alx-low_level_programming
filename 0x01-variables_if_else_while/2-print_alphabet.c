@@ -8,7 +8,6 @@
 int main(void)
 {
 int lowa;
-clrscr();
 for (lowa = 'a'; lowa <= 'z'; lowa++)
 {
 putchar(lowa);
