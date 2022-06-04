@@ -1,8 +1,10 @@
 #include <stdio.h>
 #include <time.h>
+#include <conio.h>  
+#include <stdlib.h>
 
 /**
- * Main - Entry point
+ * main - Entry point
  *
  * Return: Always 0 (Success) 
  */
