@@ -7,11 +7,11 @@
  */
 int main(void)
 {
-int k;
-for (k = 'a'; k <= 'x'; k++)
+int x;
+for (x = 'a'; x <= 'z'; x++)
 {
-k = tolower(k);
-putchar(k);
+x = tolower(x);
+putchar(x);
 }
 return (0);
 }
