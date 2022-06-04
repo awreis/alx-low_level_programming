@@ -8,7 +8,7 @@
 int main(void)
 {
 int nv;
-for (nv = 'z'; nv => 'a'; nv--)
+for (nv = 'z'; nv >= 'a'; nv--)
 {
 putchar(nv);
 }
