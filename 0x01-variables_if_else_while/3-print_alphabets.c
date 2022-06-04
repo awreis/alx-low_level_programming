@@ -12,7 +12,6 @@ for (lowUP = 'a'; lowUP <= 'z'; lowUP++)
 {
 putchar(lowUP);
 }
-putchar('\n');
 for (lowUP = 'A'; lowUP <= 'Z'; lowUP++)
 {
 putchar(lowUP);
