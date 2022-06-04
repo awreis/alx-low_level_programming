@@ -10,7 +10,7 @@ int main(void)
 int k;
 for (k = 'a'; k <= 'x'; k++)
 {
-putchar(tolower(x));
+putchar(tolower(k));
 }
 return (0);
 }
