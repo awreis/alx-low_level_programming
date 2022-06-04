@@ -11,10 +11,10 @@ int nc;
 for (nc = '0'; nc <= '9'; nc++)
 {
 putchar(nc);
-if (n != '9')
+if (nc != '9')
 {
 putchar(',');
-putchar('');
+putchar(' ');
 }
 }
 putchar('\n');
