@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include<conio.h>
-#include<string.h>
 
 /**
  * main - Entry point
@@ -12,8 +10,11 @@ int main(void)
 int alph;
 for (alph = 'a'; alph = 'z'; alph++)
 {
+if (alph != e || alpha !=q)
+{
 putchar(alph);
-getchar();
+}
+putchar('\n');
 }
 return (0);
 }
