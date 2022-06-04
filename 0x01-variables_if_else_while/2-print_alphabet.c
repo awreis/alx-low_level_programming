@@ -11,7 +11,7 @@ int lowa;
 for (lowa = 'a'; lowa <= 'z'; lowa++)
 {
 putchar(lowa);
-getchar('\n');
+getchar();
 }
 return (0);
 }
