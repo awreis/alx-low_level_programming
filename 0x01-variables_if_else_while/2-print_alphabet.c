@@ -7,11 +7,13 @@
  */
 int main(void)
 {
-int x;
-for (x = 'a'; x <= 'z'; x++)
+int lowa;
+clrscr();
+for (lowa = 'a'; lowa <= 'z'; lowa++)
 {
-x = tolower(x);
-putchar(x);
+putchar(lowa);
+putchar('\n');
+getchar();
 }
 return (0);
 }
