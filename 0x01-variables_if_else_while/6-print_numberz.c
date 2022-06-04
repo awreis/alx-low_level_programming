@@ -11,6 +11,9 @@ int a;
 a = 0;
 while (a < 0)
 {
-putchar
+putchar(a);
+a++;
 }
+putchar('\n');
+return (0);
 }
