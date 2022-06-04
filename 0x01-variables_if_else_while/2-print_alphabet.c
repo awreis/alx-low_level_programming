@@ -10,7 +10,7 @@ int main(void)
 int lowa;
 for (lowa = 'a'; lowa <= 'z'; lowa++)
 {
-putchar(lowa);
+putchar(lowa"\n");
 getchar();
 }
 return (0);
