@@ -12,7 +12,7 @@ for (ar = '1'; ar <= '9'; ar++)
 {
 for (ra = '1'; ra <= '9'; ra++)
 {
-putchar((ar / 10) + '0');
+putchar((ar % 10) + '0');
 putchar((ra % 10) + '0');
 if (ar == '9' && ra == '9')
 continue;
