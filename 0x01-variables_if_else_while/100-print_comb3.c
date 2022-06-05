@@ -8,7 +8,7 @@
 int main(void)
 {
 int ar, ra;
-for (ar = 0; ar <= 8:; ar++)
+for (ar = 0; ar <= 8; ar++)
 {
 for (ra = 1; ra <= 9; ra++)
 {
