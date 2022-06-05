@@ -14,7 +14,7 @@ for (ra = '1'; ra <= '9'; ra++)
 {
 putchar((ar % 10) + '0');
 putchar((ra % 10) + '0');
-if (ar == '8' && ra == '9')
+if (ar == '9' && ra == '9')
 continue;
 putchar(',');
 putchar(' ');
