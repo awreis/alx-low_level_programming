@@ -8,15 +8,17 @@
 int main(void)
 {
 int a, aa;
-for (a = '0'; aa <= '9'; a++)
+for (aa = '0'; aa <= '9'; aa++)
 {
-for (a = '0'; aa <= '9'; aa++)
+for (a = '0'; a <= '9'; a++)
 {
-putchar(a);
 putchar(aa);
-if (!(a == '9' && aa == '9'))
+putchar(a);
+if (!(a == '9' || aa == '8'))
+{
 putchar(',');
 putchar(' ');
+}
 }
 }
 putchar('\n');
