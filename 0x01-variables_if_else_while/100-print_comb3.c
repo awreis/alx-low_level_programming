@@ -10,11 +10,11 @@ int main(void)
 int a, aa;
 for (aa = '0'; aa <= '9'; aa++)
 {
-for (a = '0'; a <= '9'; a++)
+for (a = 'aa + 1'; a <= '9'; a++)
 {
 putchar(aa);
 putchar(a);
-if (!(a == '9' || aa == '8'))
+if (aa != '8' || aa != '9')
 {
 putchar(',');
 putchar(' ');
