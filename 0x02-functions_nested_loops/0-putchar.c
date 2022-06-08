@@ -1,12 +1,13 @@
-#include "putfxn.h"
+#include "main.h"
 
 /**
  * main - Print _putchar
  *
  * Return: Always 0
  */
+
 int main(void)
 {
 	_putchar(char c);
-	return (0);
+	return (write(1, &c, 1));
 }
