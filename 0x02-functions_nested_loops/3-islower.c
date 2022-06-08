@@ -2,7 +2,7 @@
 
 /**
  * _islower - checks for lower case
- * c - is a declared var
+ * @c int
  *
  * Return: Return 1 if c is lower, otherwise 0
  */
