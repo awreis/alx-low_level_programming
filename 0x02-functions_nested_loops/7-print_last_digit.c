@@ -11,9 +11,9 @@
 
 int print_last_digit(int x)
 {
-if (x < 0)
+if (x < 0 || x == INT_MIN)
 {
-x *= 1;
+x *= -1;
 }
 _putchar('0' + x % 10);
 return (x % 10);
