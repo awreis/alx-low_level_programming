@@ -2,7 +2,7 @@
 
 /**
  * print_alphabet_x10 - prints alphabets ten x
- * 
+ *
  * Return: Void
  */
 
@@ -15,7 +15,7 @@ int alph;
 for (alph = 'a'; alph <= 'z'; alph++)
 {
 _putchar(alph);
-}
-}
 _putchar('\n');
+}
+}
 }
