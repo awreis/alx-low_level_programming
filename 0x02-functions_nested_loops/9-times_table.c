@@ -20,14 +20,14 @@ if (x == 0)
 {
 _putchar('0' + result);
 }
-else if (x <= 9)
+else if (result <= 9)
 {
 _putchar(',');
 _putchar(' ');
 _putchar(' ');
 _putchar('0' + result);
 }
-else if (x > 9)
+else if (result > 9)
 {
 _putchar(',');
 _putchar(' ');
