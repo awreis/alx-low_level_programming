@@ -9,13 +9,18 @@
 
 void jack_bauer(void)
 {
-time_t seconds;
-struct tm *timeStruct;
-seconds = time(NULL);
-time = localtime(&seconds);
-for (time = 00:00; time <= 23:59; time++)
+int t;
+for (t = 0; t < 24; t++)
 {
-_putchar(timeStruct -> tm_min);
+int a;
+for (a = 0; t < 60; a++)
+{
+_putchar('0' + (t / 10));
+_putchar('0' + (t % 10));
+_putchar(':');
+_putchar('0' + (a / 10));
+_putchar('0' + (a % 10));
 _putchar('\n');
+}
 }
 }
