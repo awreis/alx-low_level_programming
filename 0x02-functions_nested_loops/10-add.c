@@ -5,7 +5,7 @@
  * @x: placeholder1
  * @y: placeholder2
  *
- * return: returns result
+ * Return: result
  */
 
 int add(int x, int y)
