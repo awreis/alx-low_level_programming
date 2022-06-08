@@ -16,5 +16,5 @@ if (x < 0)
 x *= -1;
 }
 _putchar('0' + x % 10);
-return (n % 10);
+return (x % 10);
 }
