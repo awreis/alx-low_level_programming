@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdio.h>
-#include <time.h>
+#include <limits.h>
 
 /**
  * print_last_digit - prints the lst digit
