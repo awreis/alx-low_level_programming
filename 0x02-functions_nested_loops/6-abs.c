@@ -2,7 +2,7 @@
 
 /**
  * _abs - computes value of an integer x
- * (int x) - declared parameter
+ * @x - declared parameter
  *
  * Return: returns 0
  */
