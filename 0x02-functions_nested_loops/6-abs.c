@@ -2,7 +2,7 @@
 
 /**
  * _abs - computes value of an integer x
- * @x - declared parameter
+ * @x: declared parameter
  *
  * Return: returns 0
  */
@@ -15,7 +15,7 @@ return (x);
 }
 else if (x < 0)
 {
-return (x);
+return (-x);
 }
 return (0);
 }
