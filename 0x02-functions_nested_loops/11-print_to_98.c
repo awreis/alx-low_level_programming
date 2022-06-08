@@ -3,22 +3,18 @@
 
 /**
  * print_to_98 - prints natural numbers from 0 to 98
+ * @n: integer parameter
  *
  * Return: always 0
  */
 
 void print_to_98(int n)
 {
-for (n = '0'; n <= '9'; n++)
+for (n = 0; n < 99; n++)
 {
-int x;
-for (x = '1'; x <= '8'; x++)
-{
-_putchar(x);
 _putchar(n);
 _putchar(',');
 _putchar(' ');
-}
 }
 _putchar('\n');
 }
