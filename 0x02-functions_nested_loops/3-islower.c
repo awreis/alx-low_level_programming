@@ -2,7 +2,7 @@
 
 /**
  * _islower - checks for lower case
- * @c int
+ * @c: integer
  *
  * Return: Return 1 if c is lower, otherwise 0
  */
