@@ -9,10 +9,10 @@
 void times_table(void)
 {
 int n;
-for (n = 0; n <= 9; n++)
+for (n = '0'; n <= '9'; n++)
 {
 int x;
-for (x = 0; x <= 9; x++)
+for (x = '0'; x <= '9'; x++)
 {
 int result;
 result = n * x;
