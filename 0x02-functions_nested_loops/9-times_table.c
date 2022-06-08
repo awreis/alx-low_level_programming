@@ -16,11 +16,25 @@ for (x = 0; x <= 9; x++)
 {
 int result;
 result = n * x;
-_putchar(result);
+if (x == 0)
+{
+_putchar('0' + result);
+}
+else if (x <= 9)
+{
 _putchar(',');
 _putchar(' ');
+_putchar(' ');
+_putchar('0' + result)
+}
+else if (x > 9)
+{
+_putchar(',');
+_putchar(' ');
+_putchar('0' + (result / 10));
+_putchar('0' + (result % 10));
+}
 }
 _putchar('\n');
 }
-_putchar('\n');
 }
