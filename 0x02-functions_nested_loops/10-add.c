@@ -2,8 +2,8 @@
 
 /**
  * add - this add two numbers
- * x - placeholder1
- * y - placeholder2
+ * @x: placeholder1
+ * @y: placeholder2
  *
  * return: returns result
  */
