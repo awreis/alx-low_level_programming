@@ -25,7 +25,7 @@ else if (x <= 9)
 _putchar(',');
 _putchar(' ');
 _putchar(' ');
-_putchar('0' + result)
+_putchar('0' + result);
 }
 else if (x > 9)
 {
