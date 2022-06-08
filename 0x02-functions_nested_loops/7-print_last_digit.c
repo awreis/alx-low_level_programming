@@ -11,8 +11,6 @@
 
 int print_last_digit(int x)
 {
-srand(time(0));
-x = rand() - RAND_MAX / 2;
 _putchar(x % 10);
 return (0);
 }
