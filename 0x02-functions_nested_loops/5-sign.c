@@ -2,6 +2,7 @@
 
 /**
  * print_sign - prints the sign of a number
+ * @n: integer
  *
  * Return: returns 1, 0 or -1
  */
@@ -20,7 +21,7 @@ return (-1);
 }
 else
 {
-_putchar('0');
+_putchar('0' + '0');
 return (0);
 }
 }
