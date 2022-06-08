@@ -16,7 +16,6 @@ for (x = '1'; x <= '8'; x++)
 {
 _putchar(x);
 _putchar(n);
-if (n == '1' && n <= '9')
 _putchar(',');
 _putchar(' ');
 }
