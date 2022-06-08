@@ -2,13 +2,15 @@
 
 /**
  * add - this add two numbers
+ * int x - placeholder1
+ * int y - placeholder2
  *
- * return: returns an int
+ * return: returns result
  */
 
 int add(int x, int y)
 {
 int result;
-result = add(x, y);
+result = x + y;
 return result;
 }
