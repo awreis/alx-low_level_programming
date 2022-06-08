@@ -6,7 +6,10 @@
  * Return: returns 0
  */
 
-int _abs(int)
+int _abs(int x)
 {
-
+int y;
+y = abs(x);
+_putchar(y);
+return (0);
 }
