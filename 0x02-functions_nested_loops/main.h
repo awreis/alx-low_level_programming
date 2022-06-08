@@ -1,5 +1,5 @@
-#ifndef putfxn.h
-#define putfxn.h
+#ifndef main.h
+#define main.h
 
 int _putchar(char c)
 
