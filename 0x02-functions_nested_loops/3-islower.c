@@ -6,7 +6,7 @@
  * Return: Return 1 if c is lower, otherwise 0
  */
 
-int _islower(int c)
+int _islower()
 {
 int c;
 if (_islower(c))
