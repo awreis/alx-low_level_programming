@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * _islower - (int c) checks for lower case
+ * _islower - checks for lower case
+ * int c - is a declared var
  *
  * Return: Return 1 if c is lower, otherwise 0
  */
