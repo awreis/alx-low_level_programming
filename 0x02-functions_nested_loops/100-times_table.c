@@ -38,11 +38,11 @@ void print_times_table(int n)
 						{
 							_putchar('0' + (multiple / 100));
 							_putchar('0' + (multiple / 10) % 10);
-							_putchar('0' + (multiple / 10));
+							_putchar('0' + (multiple % 10));
 						}
 					}
 			}
-			_putchar('\n')
-		}	
+			_putchar('\n');
+		}
 	}
 }
