@@ -17,7 +17,6 @@ void print_times_table(int n)
 			{
 				multiple = (row * column);
 				if (column == 0)
-				{
 					_putchar('0' + multiple);
 					else
 					{
@@ -42,9 +41,8 @@ void print_times_table(int n)
 							_putchar('0' + (multiple / 10));
 						}
 					}
-				}
-				_putchar('\n')
 			}
+			_putchar('\n')
 		}	
 	}
 }
