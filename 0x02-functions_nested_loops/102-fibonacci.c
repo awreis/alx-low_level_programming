@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/** 
+/**
  * main - fibonacci numbers
  *
  * Return: 0
@@ -14,7 +14,7 @@ int main(void)
 
 	for (x = 1; x <= (50 / 2); x++)
 	{
-		printf("%li, %li ", u, v);
+		printf("%li, %li, ", u, v);
 		u += v;
 		v += u;
 	}
