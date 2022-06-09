@@ -20,7 +20,7 @@ int main (void)
 	}
 	if ((50 / 2) == 1)
 	{
-		printf("%li", x);
+		printf("%li", u);
 	}
 	printf("\n");
 
