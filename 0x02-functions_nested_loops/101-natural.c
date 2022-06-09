@@ -11,11 +11,11 @@ int main(void)
 	int x;
 	int sum = 0;
 
-	for (n = 0; n < 1024; n++)
+	for (x = 0; x < 1024; n++)
 	{
-		if ((n % 3 == 0) || (n % 5 == 0))
+		if ((x % 3 == 0) || (x % 5 == 0))
 		{
-			sum += n;
+			sum += x;
 		}
 	}
 	printf("%d\n", sum);
