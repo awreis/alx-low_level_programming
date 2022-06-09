@@ -13,7 +13,7 @@ int main(void)
 	int v;
 	int sum = 1;
 
-	for ( v = 1; v < 4000000; v++)
+	for (v = 1; v < 4000000; )
 	{
 		sum = u + v;
 		u = v;
