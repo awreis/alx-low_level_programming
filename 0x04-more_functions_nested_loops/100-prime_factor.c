@@ -10,12 +10,12 @@ int main(void)
 	unsigned long numb = 612852475143;
 	unsigned long divisor = 2;
 
-	while (dividor < numb)
+	while (divisor < numb)
 	{
 		if (numb % divisor == 0)
 		{
 			numb /= divisor;
-			dividor = 2;
+			divisor = 2;
 		}
 		else
 			divisor++;
