@@ -1,6 +1,6 @@
 #ifndef NEST_H
 #define NEST_h
 
-int _putchar(char c);
+int _isupper(int c);
 
 #endif
