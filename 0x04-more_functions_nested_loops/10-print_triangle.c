@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * void print_triangle - prints a traingle
+ * print_triangle - prints a traingle
  * @size: size of triangle
  */
 
@@ -11,7 +11,7 @@ void print_triangle(int size)
 	int w;
 	int d;
 
-	if(size <= 0)
+	if (size <= 0)
 		_putchar('\n');
 	for (h = 1; h <= size; h++)
 	{
