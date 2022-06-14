@@ -3,9 +3,10 @@
 /**
  * rev_string - a function that reverses strings
  * @s: string
+ * Return: length
  */
 
-void rev_string(char *s)
+int _strlen(char *s)
 {
 	int len;
 
