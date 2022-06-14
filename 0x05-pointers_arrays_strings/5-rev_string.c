@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * rev_string - a function that reverses strings
+ * _strlen - a function that reverses strings
  * @s: string
  * Return: length
  */
@@ -34,6 +34,6 @@ void rev_string(char *s)
 		tmp = s[i];
 		s[i] = s[j];
 		s[j] = tmp;
-		i++, j++;
+		i++, j--;
 	}
 }
