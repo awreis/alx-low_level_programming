@@ -8,5 +8,10 @@
 
 void _puts(char *str)
 {
-	_puts(str);
+	int g;
+
+	for (, g !='\0' , g++ )
+	{
+		_puts(str);
+	}
 }
