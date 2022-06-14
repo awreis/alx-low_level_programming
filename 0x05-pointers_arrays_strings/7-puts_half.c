@@ -1,11 +1,12 @@
 #include "main.h"
 
 /**
- * puts_half - prints half of a string
- * @str: string
+ * _strlen - returns half of a string
+ * @s: string
+ * Return: length
  */
 
-void puts_half(char *str)
+void _strlen(char *s)
 {
 	int len = 0;
 
@@ -23,17 +24,18 @@ void puts_half(char *str)
 
 void puts_half(char *str)
 {
-	int idx;
+	int imn;
 	int len = _strlen(str);
 
 	if (len % 2 != 0)
-		idx = (len / 2) + 1;
+		imn = (len / 2) + 1;
 	else
-		idx = (len / 2);
-	while (idx < len)
+		imn = (len / 2);
+
+	while (imn < len)
 	{
-		_putchar(*(str + idx));
-		idx++;
+		_putchar(*(str + imn));
+		imn++;
 	}
 	_putchar('\n');
 }
