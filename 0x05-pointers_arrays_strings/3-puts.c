@@ -8,13 +8,9 @@
 
 void _puts(char *str)
 {
-	int g;
-
-	g = 0;
 	while (*str != '\0')
 	{
-		_puts(str);
-		str++;
-		g++;
+		_puts(*str);
+		*str++;
 	}
 }
