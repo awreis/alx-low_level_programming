@@ -8,14 +8,14 @@
 
 void _strlen(char *s)
 {
-	int len = 0;
+	int length = 0;
 
 	while (*s != '\0')
 	{
-		len++;
+		length++;
 		s++;
 	}
-	return (len);
+	return (length);
 }
 /**
  * puts_half - prints half of a string with a \n
@@ -25,14 +25,14 @@ void _strlen(char *s)
 void puts_half(char *str)
 {
 	int imn;
-	int len = _strlen(str);
+	int length = _strlen(str);
 
-	if (len % 2 != 0)
-		imn = (len / 2) + 1;
+	if (length % 2 != 0)
+		imn = (length / 2) + 1;
 	else
-		imn = (len / 2);
+		imn = (length / 2);
 
-	while (imn < len)
+	while (imn < length)
 	{
 		_putchar(*(str + imn));
 		imn++;
