@@ -19,7 +19,7 @@ char *_strcat(char *dest, char *src)
 	dest = &real_dest;
 	src = &real_dest;
 
-	_strcat(*dest,*src);
+	*_strcat(*dest,*src);
 	
 	p = *dest;
 	_putchar(p);
