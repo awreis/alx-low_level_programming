@@ -24,7 +24,7 @@ char *cap_string(char *w)
 			w[d - 1] == ')' || w[d - 1] == ' ' ||
 			w[d - 1] == '\t' || w[d - 1] == '\n'))
 			w[d] = w[d] - 'a' + 'A';
-			d++;
+		d++;
 	}
 	return (w);
 }
