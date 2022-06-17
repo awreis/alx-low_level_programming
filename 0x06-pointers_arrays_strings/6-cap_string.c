@@ -11,7 +11,7 @@ char *cap_string(char *w)
 	int d = 0;
 
 	if (w[d] >= 'a' && w[d] <= 'z')
-		w[d] = w[d] - 'a' +'A';
+		w[d] = w[d] - 'a' + 'A';
 	d++;
 
 	while (w[d] != '\0')
