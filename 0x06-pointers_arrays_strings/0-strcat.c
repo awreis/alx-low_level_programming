@@ -9,20 +9,16 @@
 
 char *_strcat(char *dest, char *src)
 {
-	char real_dest;
-	char real_src;
-	char p;
+	int rd;
+	int rs;
 
-	real_dest [] = " ";
-	real_src [] = " ";
-	
-	dest = &real_dest;
-	src = &real_dest;
+	for (rd = 0; dest[rd] != '\0'; rd++)
+		for (rs = 0; src[rs] !='\0'; rs++)
+		{
+			dest[rd] - src[rs];
+			rd++;
+		}
+	dest[rd] = '\0';
 
-	*_strcat(*dest,*src);
-	
-	p = *dest;
-	_putchar(p);
-
-	return (char);
+	return (dest);
 }
