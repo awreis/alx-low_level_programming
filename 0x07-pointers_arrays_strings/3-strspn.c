@@ -18,7 +18,7 @@ unsigned int _strspn(char *s, char *accept)
 		{
 			if (s[x] == accept[y])
 			{
-				matches++
+				matches++;
 				break;
 			}
 			if (accept[y + 1] == '\0' && s[x] != accept[y])
