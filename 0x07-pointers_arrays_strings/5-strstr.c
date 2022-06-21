@@ -1,4 +1,5 @@
 #include "main.h"
+#define NULL 0
 
 /**
  * _strstr - finds the first occurrence of the substring
@@ -28,10 +29,10 @@ char *_strstr(char *haystack, char *needle)
 			}
 			if (needle[y] == '\0')
 			{
-				return (haystack = x);
+				return (haystack + x);
 			}
 		}
-		x++
+		x++;
 	}
 	return (NULL);
 }
