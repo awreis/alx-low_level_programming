@@ -1,4 +1,5 @@
 #include "main.h"
+#define NULL 0
 
 /**
  * _strpbrk - locates the first occurrence in the string
