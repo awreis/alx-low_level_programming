@@ -24,6 +24,7 @@ unsigned int _strspn(char *s, char *accept)
 			if (accept[y + 1] == '\0' && s[x] != accept[y])
 				return (matches);
 		}
+		x++;
 	}
 	return (matches);
 }
