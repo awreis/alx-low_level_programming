@@ -24,5 +24,5 @@ void print_diagsums(int *a, int size)
 		x = (row * size) - row;
 		dia_sum_2 += a[x];
 	}
-	print("%d, %d\n", dia_sum_1, dia_sum_2);
+	printf("%d, %d\n", dia_sum_1, dia_sum_2);
 }
