@@ -20,7 +20,7 @@ int compare(char *head, char *tail)
 
 /**
  * _strlen - finds length of string to access last index
- * @s string
+ * @s: string
  * Return: length
  */
 
