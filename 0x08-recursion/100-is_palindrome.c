@@ -20,7 +20,7 @@ int compare(char *head, char *tail)
 
 /**
  * _strlen - finds length of string to access last index
- * @n: string
+ * @s string
  * Return: length
  */
 
@@ -35,7 +35,7 @@ int _strlen(char *s)
 
 /**
  * is_palindrome - check if palindrome
- * @n: string to check
+ * @s: string to check
  * Return: 1 if palindrome, otherwise 0
  */
 
