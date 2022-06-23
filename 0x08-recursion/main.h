@@ -11,5 +11,10 @@ void _puts_recursion(char *s);
 void _print_rev_recursion(char *s);
 int _strlen_recursion(char *s);
 int is_prime(int n, int d);
+int is_palindrome(char *s);
+int wildcmp(char *s1, char *s2);
+int substring_match(char *s1, char *s2, char *after_wldcd);
+int compare(char *head, char *tail);
+int _strlen(char *s);
 
 #endif
