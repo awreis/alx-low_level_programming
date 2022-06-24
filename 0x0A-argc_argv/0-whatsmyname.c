@@ -12,12 +12,15 @@ int main(int argc, char *argv[])
 {
 	int n;
 
-	for (n = 0; n < argc; n++)
+	n = 0;
+	while (n < argc)
 	{
 		if (n == 0)
 		{
-			printf("argv[%d] is %s\n", n, argv[n]);
+			printf("%s\n", argv[0]);
 		}
+		n++;
 	}
+
 	return (0);
 }
