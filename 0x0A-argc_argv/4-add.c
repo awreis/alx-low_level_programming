@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <ctype.h>
 
 /**
  * main - entry point
@@ -10,26 +11,32 @@
 
 int main(int argc, char *argv[])
 {
-	int x, y, result;
-	char ch;
+	int result;
+	int c;
 
-	x = atoi(argv[1]);
-	y = atoi(argv[2]);
-
-	if (argc >= 1)
+	if (argc < 2)
 	{
 		printf("0\n");
 	}
 
-	if (x == ch || y == ch)
+	else
 	{
-		printf("Error\n");
-		return (1);
+		/**if (isdigit(argv[]))
+		*{
+		*	printf("Error\n");
+		*	return (1);
+		*}
+		*else
+		*{
+		*/	c = 1;
+			while (c < argc)
+			{
+				result += atoi(argv[c]);
+				c++;
+			}
+			printf("%d\n", result);
+		//}
 	}
-
-
-		result = x + y;
-		printf("%d\n", result);
 
 	return (0);
 }
