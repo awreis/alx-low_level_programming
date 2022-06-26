@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 #include <stdlib.h>
 
 /**
@@ -21,8 +21,8 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-		result = x * y;
-		printf("%d\n", result);
+	result = x * y;
+	printf("%d\n", result);
 
 	return (0);
 }
