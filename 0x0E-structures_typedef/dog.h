@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 /**
  * struct dog - struct of a dog
  * @name: name of dog
