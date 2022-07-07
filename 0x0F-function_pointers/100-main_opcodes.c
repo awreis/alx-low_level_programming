@@ -38,7 +38,7 @@ int main(int argc, char *argv[])
 
 		printf(" ");
 
-		address++
+		address++;
 	}
 
 	printf("\n");
