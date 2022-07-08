@@ -43,7 +43,7 @@ void print_string(va_list valist)
 
 	s = va_arg(valist, char *);
 
-	if(s == NULL)
+	if (s == NULL)
 	{
 		printf("(nil)");
 		return;
