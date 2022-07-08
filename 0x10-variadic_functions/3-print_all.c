@@ -58,7 +58,7 @@ void print_string(va_list valist)
 
 void print_all(const char * const format, ...)
 {
-	char *seperator = "";
+	char *separator = "";
 	int i, j = 0;
 	va_list valist;
 
