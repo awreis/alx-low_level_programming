@@ -54,7 +54,7 @@ int loop(const listint_t *head)
 		if (turtle == hare)
 			return (1);
 	}
-	return (1);
+	return (0);
 }
 
 /**
