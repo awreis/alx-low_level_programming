@@ -4,18 +4,19 @@
  * read_textfile - reads text files and prints it to POSIX standard output
  * @filename: file name
  * @letters: number of characters to be printed
+ * Return: actual number of letters
  */
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;
-	int count, ryt;
+	int count, count1, ryt;
 	char *buf;
 
 	if (filename == NULL)
 		return (0);
 
-	buf = malloc(sizeof(char) *letter);
+	buf = malloc(sizeof(char) * letter);
 	if (buf == NULL)
 		return (0);
 
@@ -33,9 +34,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		free(buf);
 		return (0);
 	}
-	
+
 	ryt = write(STDUOT_FILENO, &buf[count], 1);
-	for (ryt = 0; ryt < count; ryt++)
+	for (count1 = 0; count1 < count; count1++)
 	{
 		if (ryt == -1)
 		{
