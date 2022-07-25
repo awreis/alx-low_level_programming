@@ -9,37 +9,41 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int fd;
+	int fd; /* file descriptor */
 	ssize_t n_read, n_wrote;
-	char *buf;
+	char *buffer;
 
 	if (filename == NULL)
 		return (0);
 
+	/* open */
 	fd = open(filename, O_RDONLY);
 	if (fd == -1)
 		return (0);
 
-	buf = malloc(sizeof(char) * letters);
-	if (buf == NULL)
+	/* malloc buffer */
+	buffer = malloc(sizeof(char) * letters);
+	if (buffer == NULL)
 		return (0);
 
-	n_read = read(fd, buf, letters);
+	/* read */
+	n_read = read(fd, buffer, letters);
 	if (n_read == -1)
 	{
-		free(buf);
+		free(buffer);
 		close(fd);
 		return (0);
 	}
 
-	n_wrote = write(STDUOT_FILENO, buf, n_read);
+	/* write */
+	n_wrote = write(STDOUT_FILENO, buffer, n_read);
 	if (n_wrote == -1)
 	{
+		free(buffer);
 		close(fd);
-		free(buf);
 		return (0);
 	}
-	
-	close(fd);
+
+	close();
 	return (n_read);
 }
