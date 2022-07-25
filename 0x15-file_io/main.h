@@ -9,7 +9,6 @@
 
 #include <unistd.h>
 
-/* Exit */
 #include <stdlib.h>
 
 int _putchar(char c);
