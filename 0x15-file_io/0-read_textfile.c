@@ -10,7 +10,7 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;
-	int count, count1, ryt;
+	int reed, ryt;
 	char *buf;
 
 	if (filename == NULL)
@@ -22,12 +22,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	fd = open(filename, O_RDONLY);
 	if (fd == -1)
-	{
-		free(buff);
 		return (0);
-	}
 
-	count = read(fd, buf, letters);
+	reed = read(fd, buf, letters);
 	if (count == -1)
 	{
 		close(fd);
@@ -35,17 +32,14 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 
-	ryt = write(STDUOT_FILENO, &buf[count], 1);
-	for (count1 = 0; count1 < count; count1++)
+	ryt = write(STDUOT_FILENO, buf, reed);
+	if (ryt == -1)
 	{
-		if (ryt == -1)
-		{
-			close(fd);
-			free(buf);
-			return (0);
-		}
+		close(fd);
+		free(buf)
+		return (0);
 	}
+	
 	close(fd);
-	free(buf);
-	return (count);
+	return (reed);
 }
