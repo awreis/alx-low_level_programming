@@ -1,4 +1,4 @@
-#include "hash_table.h"
+#include "hash_tables.h"
 
 /**
  * create_and_add_node - malloc, set values, and insert node into hash table
