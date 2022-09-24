@@ -1,54 +1,29 @@
 #include "hash_tables.h"
 
 /**
- * print_list - prints all the elements of a linked list
- * @h: pointer to the hash_node_t list to print
+ * ash_table_print - print key/values of hash table in order
+ * @ht: hash table
  */
-
-void print_list(hash_node_t *h)
-{
-	while (h)
-	{
-		printf("'%s': '%s'", h->key, h->value);
-		if (h->next)
-			printf(", ");
-		h = h->next;
-	}
-}
-
-/**
- * hash_table_print - prints a hash table
- * @ht: hash table to print
- */
-
 void hash_table_print(const hash_table_t *ht)
 {
-	unsigned long int i;
-	hash_node_t *node = NULL;
-	char *last_key = NULL;
-	unsigned long int index;
+	unsigned long int idx = 0;
+	hash_node_t *node;
+	char *comma = "";
 
-	if (!ht)
+	if (!ht || !ht->array)
 		return;
 
-	for (i = 0; i < ht->size; i++)
+	putchar('{');
+	while (idx < ht->size)
 	{
-		if (ht->array[i] != NULL)
-			node = ht->array[i];
-	}
-
-	printf("{");
-
-	if (node)
-	{
-		last_key = node->key;
-		index = key_index((const unsigned char *)last_key, ht->size);
-		for (i = 0; i < ht->size; i++)
+		node = ((ht->array)[idx]);
+		while (node)
 		{
-			print_list(ht->array[i]);
-			if (ht->array[i] && i < index)
-				printf(", ");
+			printf("%s'%s': '%s'", comma, node->key, node->value);
+			comma = ", ";
+			node = node->next;
 		}
+		idx++;
 	}
-	printf("}\n");
+	puts("}");
 }
