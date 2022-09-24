@@ -1,99 +1,87 @@
-#include "hash_tables.h"
+#include "hash_table.h"
 
 /**
- * hash_table_set - adds an element to the hash table
- * @ht: hash table to add
- * @key: key of the hash table
- * @value: value associated with the key
- * Return: 1 if it succeeded, 0 otherwise
+ * create_and_add_node - malloc, set values, and insert node into hash table
+ * @ht: hash table
+ * @key: key; can't be empty string
+ * @value: value
+ * @idx: index to insert in at hash table
+ * Return: 1 if success, 0 if fail
  */
-
-int hash_table_set(hash_table_t *ht, const char *key, const char *value)
+int create_and_add_node(hash_table_t *ht, const char *key, const char *value,
+			unsigned long int idx)
 {
-	hash_node_t *temp = *ht;
+	hash_node_t *node = NULL;
+	char *k;
+	char *v;
 
-	while (temp && strcmp(temp->key, key))
-		temp = temp->next;
-
-	free(temp->value);
-	temp->value = strdup(value);
-}
-
-/**
- * check_key - checks if a key exists in a hash table
- * @ht: pointer to the hash_node_t list
- * @key: key to look for
- * Return: 1 if the key is found, 0 otherwise
- */
-
-int check_key(hash_node_t *ht, const char *key)
-{
-	while (ht)
-	{
-		if (!strcmp(ht->key, key))
-			return (1);
-		ht = ht->next;
-	}
-	return (0);
-}
-
-/**
- * add_node - adds a new node at the beginning of a linked list
- * @head: double pointer to the hash_node_t list
- * @key: new key to add in the node
- * @value: value to add in the node
- * Return: the address of the new element, or NULL if it fails
- */
-
-hash_node_t *add_node(hash_node_t **head, const char *key, const char *value)
-{
-	hash_node_t *new;
-
-	new = malloc(sizeof(hash_node_t));
-	if (!new)
-		return (NULL);
-
-	new->key = strdup(key);
-	new->value = strdup(value);
-
-	if (*head == NULL)
-	{
-		(*head) = new;
-		new->next = NULL;
-	}
-	else
-	{
-		new->next = (*head);
-		(*head) = new;
-	}
-
-	return (*head);
-}
-
-/**
- * hash_table_set - adds an element to the hash table
- * @ht: hash table to add the element to
- * @key: key of the element, will give the index in the array
- * @value: value of the element to store in the array
- * Return: 1 on success, 0 otherwise
- */
-
-int hash_table_set(hash_table_t *ht, const char *key, const char *value)
-{
-	unsigned long int index;
-
-	if (!ht || !key || !strcmp(key, "") || !value)
+	node = malloc(sizeof(hash_node_t));
+	if (!node)
 		return (0);
 
-	index = key_index((unsigned char *)key, ht->size);
-
-	if (check_key(ht->array[index], key))
+	k = strdup(key);
+	if (!k)
 	{
-		replace_value(&ht->array[index], key, value);
+		free(node);
+		return (0);
+	}
+
+	v = strdup(value);
+	if (!v)
+	{
+		free(k);
+		free(node);
+		return (0);
+	}
+
+	node->key = k;
+	node->value = v;
+
+	if ((ht->array)[idx] == NULL)
+		node->next = NULL;
+	else
+		node->next = (ht->array)[idx];
+	(ht->array)[idx] = node;
+
+	return (1);
+}
+
+/**
+ * hash_table_set - add element to hash table
+ * @ht: hash table
+ * @key: key; can't be empty string
+ * @value: value
+ * Return: 1 if success, 0 if fail
+ */
+int hash_table_set(hash_table_t *ht, const char *key, const char *value)
+{
+	/* get index */
+	/* if key already exists, update value and return */
+	/* else create node */
+	/* set ht idx ptr to node; else add node to front if collision */
+
+	unsigned long int idx;
+	hash_node_t *node = NULL;
+	char *v;
+
+	if (!ht || !(ht->array) || !key || strlen(key) == 0 || !value)
+		return (0);
+
+	idx = key_index((const unsigned char *)key, ht->size);
+
+	node = (ht->array)[idx];
+	while (node && (strcmp(key, node->key) != 0))
+		node = node->next;
+	if (node != NULL)
+	{
+		v = strdup(value);
+		if (!v)
+			return (0);
+		if (node->value)
+			free(node->value);
+		node->value = v;
 		return (1);
 	}
-	add_node(&ht->array[index], key, value);
-	if (&ht->array[index] == NULL)
-		return (0);
-	return (1);
+
+	return (create_and_add_node(ht, key, value, idx));
 }
